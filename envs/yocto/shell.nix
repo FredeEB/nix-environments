@@ -4,7 +4,7 @@
 }:
 
 let
-  fhs = pkgs.buildFHSUserEnvBubblewrap {
+  fhs = pkgs.buildFHSUserEnv {
     name = "yocto-fhs";
     targetPkgs = pkgs: with pkgs; let
       ncurses' = pkgs.ncurses5.overrideAttrs
